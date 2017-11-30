@@ -1,0 +1,20 @@
+{
+  "short_name": "PCAH",
+  "name": "Preferred Care at Home Convention App",
+  "icons": [
+    {
+      "src": "pcah.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "splash.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://convention-app-a6834.firebaseapp.com",
+  "background_color": "#a7ce39",
+  "theme_color": "#a7ce39",
+  "display": "standalone"
+}

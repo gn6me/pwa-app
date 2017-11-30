@@ -1,0 +1,59 @@
+.App-header h2 {
+  margin: 0;
+  padding: 7px 0;
+  font-size: 120%;
+}
+
+div.card {
+  padding: 15px;
+  text-align: left;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  margin: 15px;
+}
+
+button {
+  border: 1px solid #a7ce39;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #fff;
+  color: #a7ce39;
+}
+div.buttonMargin {
+  height: 30px;
+  display: block;
+}
+button.goback {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border: none;
+  border-radius: 0;
+  background: #eee;
+  color: #333;
+  text-align: center;
+}
+
+div.submenu {
+  background: #5d4f4f;
+  padding: 7px;
+}
+div.submenu button {
+  width: 20%;
+  margin: 0 2.5%;
+  border-color: #fff;
+  background: #5d4f4f;
+  padding: 7px 0;
+}
+div.submenu a,div.submenu a:visited {
+  color: #fff;
+
+  font-size: 80%;
+}
+
+
+a,a:visited {
+  color: #a7ce39;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
