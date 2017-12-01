@@ -16,6 +16,10 @@ const Home = (props) => (
   <div>
     <Page title="Preferred Care at Home Annual Convention"/>
     <div className="card">
+      <p><strong><i class="fa fa-wifi" aria-hidden="true"></i> Wi-Fi</strong></p>
+      <p>user: seagate<br/>pass: myhotelwifi</p>
+    </div>
+    <div className="card">
       <h3><i class="fa fa-building" aria-hidden="true"></i> Hotel</h3>
       <p>Check-in: Apr 2, 9:00am</p>
       <p>Check-out: Apr 7, 11:00am</p>
@@ -56,7 +60,7 @@ const Eats = (props) => (
     <div className="card">
       <h3>Restaraunt 1</h3>
       <p>This place serves comfort food and alcoholic beverages. Happy hour is from 3pm-7pm.</p>
-      <button><a href="#">View Menu</a></button>
+      <button><a href="#">View Menu</a></button> <button><a href="">Get Directions</a></button>
     </div>
     <div className="card">
       <h3>Restaraunt 1</h3>
