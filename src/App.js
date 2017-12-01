@@ -6,7 +6,7 @@ import './App.css';
 const Page = ({ title }) => (
     <div className="App">
       <div className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      
         <h2>{title}</h2>
       </div>
     </div>
@@ -26,7 +26,7 @@ const Home = (props) => (
       <button><Link to="/hotel">View Hotel Info</Link></button> <button><a href="https://www.google.com/maps/place/The+Seagate+Hotel+%26+Spa" target="_blank">Get Directions</a></button>
     </div>
     <div className="card">
-      <h3>Gues Speaker - Teepa Snow</h3>
+      <h3>Guest Speaker - Teepa Snow</h3>
       <p>Tuesday, April 24 - Teepa Snow will be our speaker specializing in Alzheimer's and dementia education.</p>
     </div>
     <div className="card">
@@ -75,7 +75,9 @@ const Eats = (props) => (
       <h3>Restaraunt 1</h3>
       <p>This place serves comfort food and alcoholic beverages. Happy hour is from 3pm-7pm.</p>
       <button><a href="#">View Menu</a></button>
-    </div>    <div className="bottomMenu">
+    </div>
+    <div className="buttonMargin"></div>
+    <div className="bottomMenu">
       <button><Link to="/"><i class="fa fa-home" aria-hidden="true"></i><br/>Home</Link></button>
       <button><Link to="/hotel"><i class="fa fa-building" aria-hidden="true"></i><br/>Hotel</Link></button>
       <button><Link to="/schedule"><i class="fa fa-calendar" aria-hidden="true"></i><br/>Schedule</Link></button>

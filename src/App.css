@@ -1,7 +1,7 @@
 .App-header h2 {
   margin: 0;
   padding: 7px 0;
-  font-size: 120%;
+  font-size: 100%;
 }
 
 div.card {
@@ -44,21 +44,29 @@ div.bottomMenu {
   position: fixed;
   bottom: 0;
   background: #5d4f4f;
-  padding: 10px;
+  padding: 10px 0;
 }
 div.bottomMenu button {
-  width: 20%;
-  margin: 0 2.5%;
+  width: 25%;
   height: 30px;
-  padding: 0 10px;
+  padding: 0;
   border: none;
   text-align: center;
-  background: #5d4f4f;
+  background: #5d4f4f url(/opaque.png) right repeat-y;
+}
+div.bottomMenu button:last-child {
+  background-image: none;
 }
 div.bottomMenu a,div.bottomMenu a:visited {
+  width: 100%;
   color: #f4811f;
+  display: block;
 }
-
+@media screen and (max-width:430px) {
+  div.bottomMenu a {
+    font-size: 80%;
+  }
+}
 
 a,a:visited {
   color: #a7ce39;
