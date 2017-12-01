@@ -60,7 +60,7 @@ const Eats = (props) => (
     <div className="card">
       <h3>Restaraunt 1</h3>
       <p>This place serves comfort food and alcoholic beverages. Happy hour is from 3pm-7pm.</p>
-      <button><a href="#">View Menu</a></button> <button><a href="">Get Directions</a></button>
+      <button><a href="#">View Menu</a></button> <button><a href="https://www.google.com/maps/place/The+Seagate+Hotel+%26+Spa">Get Directions</a></button>
     </div>
     <div className="card">
       <h3>Restaraunt 1</h3>
