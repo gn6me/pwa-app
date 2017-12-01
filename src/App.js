@@ -41,15 +41,40 @@ const Home = (props) => (
       <p>These are some details about nearby restaurants.</p>
       <button><Link to="/eats">View Restaurants</Link></button>
     </div>
+    <div className="buttonMargin"></div>
+    <div className="bottomMenu">
+      <button><Link to="/"><i class="fa fa-home" aria-hidden="true"></i><br/>Home</Link></button>
+      <button><Link to="/hotel"><i class="fa fa-building" aria-hidden="true"></i><br/>Hotel</Link></button>
+      <button><Link to="/schedule"><i class="fa fa-calendar" aria-hidden="true"></i><br/>Schedule</Link></button>
+      <button><Link to="/eats"><i class="fa fa-cutlery" aria-hidden="true"></i><br/>Eats</Link></button>
+    </div>
   </div>
 );
 
 const Hotel = (props) => (
-  <Page title="Hotel"/>
+  <div>
+    <Page title="Hotel"/>
+    <div className="buttonMargin"></div>
+    <div className="bottomMenu">
+      <button><Link to="/"><i class="fa fa-home" aria-hidden="true"></i><br/>Home</Link></button>
+      <button><Link to="/hotel"><i class="fa fa-building" aria-hidden="true"></i><br/>Hotel</Link></button>
+      <button><Link to="/schedule"><i class="fa fa-calendar" aria-hidden="true"></i><br/>Schedule</Link></button>
+      <button><Link to="/eats"><i class="fa fa-cutlery" aria-hidden="true"></i><br/>Eats</Link></button>
+    </div>
+  </div>
 );
 
 const Schedule = (props) => (
-  <Page title="Schedule"/>
+  <div>
+    <Page title="Schedule"/>
+    <div className="buttonMargin"></div>
+    <div className="bottomMenu">
+      <button><Link to="/"><i class="fa fa-home" aria-hidden="true"></i><br/>Home</Link></button>
+      <button><Link to="/hotel"><i class="fa fa-building" aria-hidden="true"></i><br/>Hotel</Link></button>
+      <button><Link to="/schedule"><i class="fa fa-calendar" aria-hidden="true"></i><br/>Schedule</Link></button>
+      <button><Link to="/eats"><i class="fa fa-cutlery" aria-hidden="true"></i><br/>Eats</Link></button>
+    </div>
+  </div>
 );
 
 const Eats = (props) => (
