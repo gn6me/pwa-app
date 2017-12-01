@@ -14,16 +14,20 @@ const Page = ({ title }) => (
 
 const Home = (props) => (
   <div>
-    <Page title="Preferred Care at Home Annual Convention"/>
+    <Page title="Forget-Me-Not 2018 Conference"/>
     <div className="card">
       <p><strong><i class="fa fa-wifi" aria-hidden="true"></i> Wi-Fi</strong></p>
       <p>user: seagate<br/>pass: myhotelwifi</p>
     </div>
     <div className="card">
       <h3><i class="fa fa-building" aria-hidden="true"></i> Hotel</h3>
-      <p>Check-in: Apr 2, 9:00am</p>
-      <p>Check-out: Apr 7, 11:00am</p>
-      <button><Link to="/hotel">View Hotel Info</Link></button>
+      <p>Check-in: Apr 23, 9:00am</p>
+      <p>Check-out: Apr 26, 11:00am</p>
+      <button><Link to="/hotel">View Hotel Info</Link></button> <button><a href="https://www.google.com/maps/place/The+Seagate+Hotel+%26+Spa" target="_blank">Get Directions</a></button>
+    </div>
+    <div className="card">
+      <h3>Gues Speaker - Teepa Snow</h3>
+      <p>Tuesday, April 24 - Teepa Snow will be our speaker specializing in Alzheimer's and dementia education.</p>
     </div>
     <div className="card">
       <h3><i class="fa fa-calendar" aria-hidden="true"></i> Schedule</h3>
@@ -41,7 +45,7 @@ const Home = (props) => (
 );
 
 const Hotel = (props) => (
-  <Page title="About"/>
+  <Page title="Hotel"/>
 );
 
 const Schedule = (props) => (
@@ -71,9 +75,12 @@ const Eats = (props) => (
       <h3>Restaraunt 1</h3>
       <p>This place serves comfort food and alcoholic beverages. Happy hour is from 3pm-7pm.</p>
       <button><a href="#">View Menu</a></button>
+    </div>    <div className="bottomMenu">
+      <button><Link to="/"><i class="fa fa-home" aria-hidden="true"></i><br/>Home</Link></button>
+      <button><Link to="/hotel"><i class="fa fa-building" aria-hidden="true"></i><br/>Hotel</Link></button>
+      <button><Link to="/schedule"><i class="fa fa-calendar" aria-hidden="true"></i><br/>Schedule</Link></button>
+      <button><Link to="/eats"><i class="fa fa-cutlery" aria-hidden="true"></i><br/>Eats</Link></button>
     </div>
-    <div className="buttonMargin"></div>
-    <div><button className="goback" onClick={browserHistory.goBack}><i class="fa fa-arrow-left" aria-hidden="true"></i></button></div>
   </div>
 );
 

@@ -22,16 +22,6 @@ div.buttonMargin {
   height: 30px;
   display: block;
 }
-button.goback {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  border: none;
-  border-radius: 0;
-  background: #eee;
-  color: #333;
-  text-align: center;
-}
 
 div.submenu {
   background: #5d4f4f;
@@ -47,6 +37,26 @@ div.submenu button {
 div.submenu a,div.submenu a:visited {
   color: #fff;
   font-size: 80%;
+}
+
+div.bottomMenu {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #5d4f4f;
+  padding: 10px;
+}
+div.bottomMenu button {
+  width: 20%;
+  margin: 0 2.5%;
+  height: 30px;
+  padding: 0 10px;
+  border: none;
+  text-align: center;
+  background: #5d4f4f;
+}
+div.bottomMenu a,div.bottomMenu a:visited {
+  color: #f4811f;
 }
 
 
