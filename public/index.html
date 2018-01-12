@@ -10,7 +10,9 @@
     -->
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <!-- Add manifest -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="manifest" href="https://convention-app-a6834.firebaseapp.com/manifest.json">
+    <link rel="stylesheet" type="text/css" href="https://convention-app-a6834.firebaseapp.com/addtohomescreen.css">
+    <script src="https://convention-app-a6834.firebaseapp.com/addtohomescreen.js"></script>
     <!-- Tell the browser it's a PWA -->
     <meta name="mobile-web-app-capable" content="yes">
     <!-- Tell iOS it's a PWA -->
@@ -29,8 +31,7 @@
         text-align: center;
       }
       .App-header {
-        background-color: #a7ce39;
-        height: 30px;
+        height: auto;
         padding: 10px;
         color: white;
       }
@@ -44,6 +45,9 @@
     </style>
 
     <script src="https://use.fontawesome.com/6662f53420.js"></script>
+    <script>
+      addToHomescreen();
+    </script>
 
   </head>
   <body>

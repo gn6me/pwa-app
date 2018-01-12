@@ -1,52 +1,53 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Router, browserHistory, Route, Link } from 'react-router';
-import logo from './logo.svg';
+import Countdown from './Countdown.js';
 import './App.css';
 
 const Page = ({ title }) => (
     <div className="App">
       <div className="App-header">
       
-        <h2>{title}</h2>
+        <div className="logo"><img src="./logo.png" /></div>
       </div>
     </div>
 );
 
+  const currentDate = new Date();
+  const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
+
 const Home = (props) => (
   <div>
     <Page title="Forget-Me-Not 2018 Conference"/>
-    <div className="card">
-      <p><strong><i class="fa fa-wifi" aria-hidden="true"></i> Wi-Fi</strong></p>
-      <p>user: seagate<br/>pass: myhotelwifi</p>
+    <div className="registerButton"><a href="https://goo.gl/forms/XsDdkPTu4aHlRwJw2" target="_blank"><button>Register Now</button></a></div>
+    <div className="card countdown">
+      <Countdown date={new Date ('April 23, 2018')} />
     </div>
     <div className="card">
-      <h3><i class="fa fa-building" aria-hidden="true"></i> Hotel</h3>
+      <iframe width="100%" src="https://www.youtube.com/embed/24yHz4atqsE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div className="card hotel">
+      <h3><i class="fa fa-building" aria-hidden="true"></i> Seagate Hotel</h3>
       <p>Check-in: Apr 23, 9:00am</p>
-      <p>Check-out: Apr 26, 11:00am</p>
-      <button><Link to="/hotel">View Hotel Info</Link></button> <button><a href="https://www.google.com/maps/place/The+Seagate+Hotel+%26+Spa" target="_blank">Get Directions</a></button>
+      <p>Check-out: Apr 27, 11:00am</p>
+      <button><a href="https://gc.synxis.com/rez.aspx?tps=fml&arrive=2018-4-23&adult=1&step=1&hotel=27286&shell=fPBISH2&chain=10237&template=fPBISH&promo=PCH18&avcurrency=USD" target="_blank">Book Room</a></button> <button><a href="https://www.google.com/maps/place/The+Seagate+Hotel+%26+Spa" target="_blank">View Map</a></button>
+      <p>Promo Code: <strong>PCH18</strong></p>
     </div>
     <div className="card">
-      <h3>Guest Speaker - Teepa Snow</h3>
-      <p>Tuesday, April 24 - Teepa Snow will be our speaker specializing in Alzheimer's and dementia education.</p>
+      <img className="headshot" src="./teepa.jpg" />
+      <h3>Guest Speaker<br />Teepa Snow</h3>
+      <p>Teepa Snow will be our speaker specializing in Alzheimer's and dementia education.</p>
+      <p>Teepa’s personal mission is to help others better understand how it feels to be living with dementia. She utilizes her gifts of role play to demonstrate behavioral states and stages of dementia. This results in greater understanding for her audiences.</p>
+      <p><a href="http://teepasnow.com/" target="_blank">TeepaSnow.com</a></p>
     </div>
     <div className="card">
-      <h3><i class="fa fa-calendar" aria-hidden="true"></i> Schedule</h3>
-      <p><strong>Coming Up</strong></p>
-      <p>Understanding Marketing Automation - Matt Adkins</p>
-      <p>@11:30am</p>
-      <button><Link to="/schedule">View Full Schedule</Link></button>
-    </div>
-    <div className="card">
-      <h3><i class="fa fa-cutlery" aria-hidden="true"></i> Eats</h3>
-      <p>These are some details about nearby restaurants.</p>
-      <button><Link to="/eats">View Restaurants</Link></button>
-    </div>
-    <div className="buttonMargin"></div>
-    <div className="bottomMenu">
-      <button><Link to="/"><i class="fa fa-home" aria-hidden="true"></i><br/>Home</Link></button>
-      <button><Link to="/hotel"><i class="fa fa-building" aria-hidden="true"></i><br/>Hotel</Link></button>
-      <button><Link to="/schedule"><i class="fa fa-calendar" aria-hidden="true"></i><br/>Schedule</Link></button>
-      <button><Link to="/eats"><i class="fa fa-cutlery" aria-hidden="true"></i><br/>Eats</Link></button>
+      <h3>Attendees</h3>
+      <p><strong>Scott Green & Robert Smith</strong><br />Northwest Louisiana</p>
+      <p><strong>Kevin Saunders</strong><br />Lorain County</p>
+      <p><strong>Jordana Masserman & Dan Masserman</strong><br />North Westchester & Putnam</p>
+      <p><strong>Ethan Guerrieri</strong><br />Palm Beaches and the Treasure Coast</p>
+      <p><strong>Sharon Ahearn & Janelle Guiliano</strong><br />Wyoming Valley</p>
+      <p><strong>Robin Wilkie</strong><br />Northeast Orlando</p>
     </div>
   </div>
 );
