@@ -19,7 +19,12 @@ div.card {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   margin: 15px;
 }
-div.card p a,div.card p a:visited {
+div.teepa {
+  padding: 0;
+  text-align: center;
+  margin: 15px;
+}
+div.card p a,div.card p a:visited, div.teepa p a, div.teepa p a:visited {
   color: #0193ce;
 }
 

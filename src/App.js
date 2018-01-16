@@ -33,21 +33,23 @@ const Home = (props) => (
       <button><a href="https://gc.synxis.com/rez.aspx?tps=fml&arrive=2018-4-23&adult=1&step=1&hotel=27286&shell=fPBISH2&chain=10237&template=fPBISH&promo=PCH18&avcurrency=USD" target="_blank">Book Room</a></button> <button><a href="https://www.google.com/maps/place/The+Seagate+Hotel+%26+Spa" target="_blank">View Map</a></button>
       <p>Promo Code: <strong>PCH18</strong></p>
     </div>
-    <div className="card">
-      <img className="headshot" src="./teepa.jpg" />
-      <h3>Guest Speaker<br />Teepa Snow</h3>
-      <p>Teepa Snow will be our speaker specializing in Alzheimer's and dementia education.</p>
-      <p>Teepa’s personal mission is to help others better understand how it feels to be living with dementia. She utilizes her gifts of role play to demonstrate behavioral states and stages of dementia. This results in greater understanding for her audiences.</p>
-      <p><a href="http://teepasnow.com/" target="_blank">TeepaSnow.com</a></p>
+    <div className="teepa">
+      <img width="100%" src="./meet-teepa.png" />
+      <p><a href="http://teepasnow.com/">Visit TeepaSnow.com</a></p>
     </div>
     <div className="card">
       <h3>Attendees</h3>
       <p><strong>Scott Green & Robert Smith</strong><br />Northwest Louisiana</p>
       <p><strong>Kevin Saunders</strong><br />Lorain County</p>
-      <p><strong>Jordana Masserman & Dan Masserman</strong><br />North Westchester & Putnam</p>
+      <p><strong>Jordana & Dan Masserman</strong><br />North Westchester & Putnam</p>
       <p><strong>Ethan Guerrieri</strong><br />Palm Beaches and the Treasure Coast</p>
       <p><strong>Sharon Ahearn & Janelle Guiliano</strong><br />Wyoming Valley</p>
       <p><strong>Robin Wilkie</strong><br />Northeast Orlando</p>
+      <p><strong>Jill & George Malanga and Kathleen Perlet</strong><br />Northwest New Jersey</p>
+      <p><strong>Suzanne & Ray Hickel</strong><br />Alaska</p>
+      <p><strong>Don & Amy Kulikowski</strong><br />Pittsburgh</p>
+      <p><strong>Argie Martinez</strong><br />North Austin</p>
+      <p><strong>Genesis Armani</strong><br />Land O' Lakes</p>
     </div>
   </div>
 );
