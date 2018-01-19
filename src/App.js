@@ -50,6 +50,7 @@ const Home = (props) => (
       <p><strong>Don & Amy Kulikowski</strong><br />Pittsburgh</p>
       <p><strong>Argie Martinez</strong><br />North Austin</p>
       <p><strong>Genesis Armani</strong><br />Land O' Lakes</p>
+      <p><strong>Katie Herrera & Marco Villavicencio</strong><br />Central Contra Costa</p>
     </div>
   </div>
 );
