@@ -24,7 +24,9 @@ const Home = (props) => (
       <Countdown date={new Date ('April 23, 2018')} />
     </div>
     <div className="card">
-      <iframe width="100%" src="https://www.youtube.com/embed/24yHz4atqsE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div className="videoWrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-9i_dGKUlgw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
     </div>
     <div className="card hotel">
       <h3><i class="fa fa-building" aria-hidden="true"></i> Seagate Hotel</h3>
@@ -48,7 +50,7 @@ const Home = (props) => (
       <p><strong>Jill & George Malanga and Kathleen Perlet</strong><br />Northwest New Jersey</p>
       <p><strong>Suzanne & Ray Hickel</strong><br />Alaska</p>
       <p><strong>Don & Amy Kulikowski</strong><br />Pittsburgh</p>
-      <p><strong>Argie Martinez</strong><br />North Austin</p>
+      <p><strong>Argie & Abraham Martinez</strong><br />North Austin</p>
       <p><strong>Genesis Armani</strong><br />Land O' Lakes</p>
       <p><strong>Katie Herrera & Marco Villavicencio</strong><br />Central Contra Costa</p>
     </div>
