@@ -53,6 +53,9 @@ const Home = (props) => (
       <p><strong>Argie & Abraham Martinez</strong><br />North Austin</p>
       <p><strong>Genesis Armani</strong><br />Land O' Lakes</p>
       <p><strong>Katie Herrera & Marco Villavicencio</strong><br />Central Contra Costa</p>
+      <p><strong>Ekamma Inyang</strong><br />York County</p>
+      <p><strong>Deborah Langrock</strong><br />North Pinellas</p>
+      <p><strong>Joe & Michelle Passantino</strong><br />Greater Kansas City Missouri</p>
     </div>
   </div>
 );
